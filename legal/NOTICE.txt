@@ -1,0 +1,29 @@
+Barq 27B — policy 4.0, 2026-10-06
+
+Barq 27B is a derivative serving distribution based on Prism ML's Ternary Bonsai 2
+27B GGUF, based on Qwen3.8-27B according to the upstream model card. Original
+weight authorship remains with the upstream authors. Numerical tensor weights
+were not trained or requantized in this project.
+
+Barq contributions: original compact operating policy, embedded chat-template
+wrapper, GGUF display/operating metadata, six-mode Chat Completions gateway,
+FIFO admission, launch/integration files and scoped external-memory bridge.
+Packaging and project maintained by D0shi-Eng. No affiliation with Prism ML,
+Anthropic or OpenAI is implied, and no parity with their models is claimed.
+The policy is original Barq text; third-party leaked prompts are not distributed.
+
+Project source and policy: Apache License 2.0 (LICENSE).
+Upstream model: Apache License 2.0. Runtime ggml/llama.cpp: MIT.
+NVIDIA binaries are obtained separately from the official runtime release;
+applicable vendor redistribution conditions remain separate.
+
+Evaluation code/data retained under their own upstream licenses:
+Google Research IFEval: Apache 2.0.
+Gorilla/BFCL: see evaluations/vendor/Gorilla-LICENSE.txt.
+NLTK tokenizer: see evaluations/vendor/NLTK-Punkt-README.txt.
+This project license does not replace any third-party license.
+
+https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
+https://github.com/PrismML-Eng/llama.cpp/releases/tag/prism-b10683-d8f26ee
+https://github.com/google-research/google-research/tree/master/instruction_following_eval
+https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard

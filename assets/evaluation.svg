@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img">
+<title>MEASURED EVALUATION SNAPSHOT</title>
+<desc>Small fixed samples; no full-benchmark score, ranking, baseline comparison or pressure test.</desc>
+<rect width="1600" height="1000" fill="#0b1220"/>
+<text x="60" y="87" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">BARQ 27B</text>
+<text x="60" y="134" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">MEASURED EVALUATION SNAPSHOT</text>
+<text x="60" y="170" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Small fixed samples; no full-benchmark score, ranking, baseline comparison or pressure test.</text>
+<polyline points="60,194 1540,194" fill="none" stroke="#334760" stroke-width="2"/>
+<text x="70" y="291" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">IFEval strict</text>
+<text x="70" y="327" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">8 / 8 prompts   |   17 / 17 constraints</text>
+<rect x="700" y="272" width="650" height="36" rx="8" fill="#23334b" stroke="#23334b" stroke-width="2"/>
+<rect x="700" y="272" width="650" height="36" rx="8" fill="#56dfbc" stroke="#56dfbc" stroke-width="2"/>
+<text x="1380" y="295" fill="#56dfbc" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">100.0%</text>
+<text x="70" y="416" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">BFCL v4 subset</text>
+<text x="70" y="452" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">7 / 8 cases   |   1 argument-value failure</text>
+<rect x="700" y="397" width="650" height="36" rx="8" fill="#23334b" stroke="#23334b" stroke-width="2"/>
+<rect x="700" y="397" width="568.75" height="36" rx="8" fill="#67c7ff" stroke="#67c7ff" stroke-width="2"/>
+<text x="1380" y="420" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">87.5%</text>
+<text x="70" y="541" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Synthetic smoke suite</text>
+<text x="70" y="577" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">11 / 12 cases   |   separate protocol</text>
+<rect x="700" y="522" width="650" height="36" rx="8" fill="#23334b" stroke="#23334b" stroke-width="2"/>
+<rect x="700" y="522" width="595.8333333333333" height="36" rx="8" fill="#ffc66d" stroke="#ffc66d" stroke-width="2"/>
+<text x="1380" y="545" fill="#ffc66d" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">91.7%</text>
+<rect x="60" y="685" width="465" height="150" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="84" y="732" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">9.62 s</text>
+<text x="84" y="782" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Median completion: official subset</text>
+<rect x="565" y="685" width="465" height="150" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="589" y="732" fill="#ffc66d" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">2.12 s</text>
+<text x="589" y="782" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Median completion: smoke suite</text>
+<rect x="1070" y="685" width="470" height="150" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="1094" y="732" fill="#56dfbc" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">205.39 s</text>
+<text x="1094" y="782" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Official sample: total window</text>
+<text x="60" y="897" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Default: 512 thinking tokens for the official subset. Four planned cases were NOT_RUN.</text>
+<text x="60" y="931" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Stopped at a resource gate; later available RAM was 3.70 GiB. Failures are retained.</text>
+<text x="60" y="964" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">SOURCE-VERIFIED STRUCTURE  |  POLICY 4.0  |  06 OCT 2026</text>
+</svg>

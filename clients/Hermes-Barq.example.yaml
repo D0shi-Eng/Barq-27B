@@ -1,0 +1,8 @@
+# Merge with your own Hermes configuration. Never commit real credentials.
+model:
+  provider: custom
+  default: Barq-27B
+  base_url: http://127.0.0.1:8081/v1
+  api_mode: chat_completions
+  api_key: ""
+  context_length: 262144

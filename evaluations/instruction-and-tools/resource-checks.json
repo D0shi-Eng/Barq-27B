@@ -1,0 +1,45 @@
+{
+  "during": [
+    {
+      "elapsed_s": 3.297,
+      "free_ram_gib": 5.38,
+      "cpu_load_percent": 4,
+      "model_paths": [
+        "D:\\Barq 27B\\models\\Barq-27B-PQ2_0-v4.gguf"
+      ]
+    },
+    {
+      "elapsed_s": 69.563,
+      "free_ram_gib": 4.08,
+      "cpu_load_percent": 5,
+      "model_paths": [
+        "D:\\Barq 27B\\models\\Barq-27B-PQ2_0-v4.gguf"
+      ]
+    },
+    {
+      "elapsed_s": 114.766,
+      "free_ram_gib": 4.69,
+      "cpu_load_percent": 4,
+      "model_paths": [
+        "D:\\Barq 27B\\models\\Barq-27B-PQ2_0-v4.gguf"
+      ]
+    },
+    {
+      "elapsed_s": 147.547,
+      "free_ram_gib": 4.99,
+      "cpu_load_percent": 9,
+      "model_paths": [
+        "D:\\Barq 27B\\models\\Barq-27B-PQ2_0-v4.gguf"
+      ]
+    }
+  ],
+  "postflight": {
+    "resources": {
+      "error": "Insufficient available resources; no inference sent."
+    },
+    "backend": {
+      "slots": 1,
+      "processing": false
+    }
+  }
+}

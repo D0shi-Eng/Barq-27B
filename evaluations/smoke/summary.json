@@ -1,0 +1,16 @@
+{
+  "cases_planned": 12,
+  "cases_attempted": 12,
+  "passed": 11,
+  "failed_attempted": 1,
+  "not_run": 0,
+  "aborted": null,
+  "success_percent_of_attempted": 91.67,
+  "median_completed_duration_s": 2.1165,
+  "max_attempt_duration_s": 4.969,
+  "total_request_duration_s": 32.328,
+  "output_tokens_reported": 895,
+  "all_usage_reported": true,
+  "scope": "12 synthetic cases only; not a general benchmark score",
+  "directory": "."
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "official_subset_bounded_run_not_full_benchmark",
+  "output": ".",
+  "started_utc": "2026-10-06T18:18:20.604502+00:00",
+  "ended_utc": "2026-10-06T18:21:47.492922+00:00",
+  "timed_execution_window_s": 205.391,
+  "planned": 20,
+  "attempted": 16,
+  "not_run": [
+    "2225",
+    "irrelevance_10",
+    "2677",
+    "irrelevance_152"
+  ],
+  "abort_reason": "RuntimeError: Insufficient available resources; no inference sent.",
+  "transport_errors": 0,
+  "scorer_errors": 0,
+  "truncated_responses": 0,
+  "ifeval": {
+    "strict": {
+      "prompt_passed": 8,
+      "prompt_total": 8,
+      "instruction_passed": 17,
+      "instruction_total": 17
+    },
+    "loose": {
+      "prompt_passed": 8,
+      "prompt_total": 8,
+      "instruction_passed": 17,
+      "instruction_total": 17
+    }
+  },
+  "bfcl": {
+    "passed": 7,
+    "total": 8,
+    "categories": {
+      "simple_python": {
+        "passed": 4,
+        "total": 4
+      },
+      "multiple": {
+        "passed": 1,
+        "total": 2
+      },
+      "parallel": {
+        "passed": 2,
+        "total": 2
+      },
+      "irrelevance": {
+        "passed": 0,
+        "total": 0
+      }
+    }
+  },
+  "performance": {
+    "sum_request_s": 194.813,
+    "median_request_s": 9.617,
+    "p95_request_s_nearest_rank": 42.547,
+    "max_request_s": 42.547,
+    "median_first_visible_answer_or_tool_s": 7.633,
+    "usage_records": 16,
+    "prompt_tokens": 35565,
+    "completion_tokens": 7308,
+    "completion_tokens_per_request_wall_second": 37.513,
+    "throughput_definition": "Completion tokens / total request wall time, including prompt processing and reasoning; not decoder-only tokens/s."
+  }
+}

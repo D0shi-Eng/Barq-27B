@@ -1,0 +1,1167 @@
+{
+  "kind": "official_dataset_subsets_custom_bounded_runner",
+  "selection_seed": 20261006,
+  "selection": "10 targeted IFEval instruction families, random row within each; BFCL 4/2/2/2 random rows by category. Selected before inference.",
+  "sources": {
+    "revisions": {
+      "google-research/google-research": "e49bbfe381c9c0e564b937f1c4e163a2273c65cc",
+      "ShishirPatil/gorilla": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8"
+    },
+    "files": [
+      {
+        "path": "vendor/instruction_following_eval/instructions.py",
+        "url": "https://raw.githubusercontent.com/google-research/google-research/e49bbfe381c9c0e564b937f1c4e163a2273c65cc/instruction_following_eval/instructions.py",
+        "bytes": 55162,
+        "sha256": "60e086f5342a03ce8e18b64bbcccf86308f523c08aa826707a562150a52f3edf"
+      },
+      {
+        "path": "vendor/instruction_following_eval/instructions_util.py",
+        "url": "https://raw.githubusercontent.com/google-research/google-research/e49bbfe381c9c0e564b937f1c4e163a2273c65cc/instruction_following_eval/instructions_util.py",
+        "bytes": 19538,
+        "sha256": "a73797261eee5bf447e279d82a2b700b1bdd3cb1193412dbab1270a85832bc6b"
+      },
+      {
+        "path": "vendor/instruction_following_eval/instructions_registry.py",
+        "url": "https://raw.githubusercontent.com/google-research/google-research/e49bbfe381c9c0e564b937f1c4e163a2273c65cc/instruction_following_eval/instructions_registry.py",
+        "bytes": 7240,
+        "sha256": "ec92d72c264f6d906978613085db262356174300370a3fffe6fefd5969ce9cfc"
+      },
+      {
+        "path": "vendor/instruction_following_eval/evaluation_lib.py",
+        "url": "https://raw.githubusercontent.com/google-research/google-research/e49bbfe381c9c0e564b937f1c4e163a2273c65cc/instruction_following_eval/evaluation_lib.py",
+        "bytes": 6984,
+        "sha256": "35decc06000718487f44d7deafa6d3f48a8ec0886281edf40162c0265b7d248c"
+      },
+      {
+        "path": "vendor/instruction_following_eval/README.md",
+        "url": "https://raw.githubusercontent.com/google-research/google-research/e49bbfe381c9c0e564b937f1c4e163a2273c65cc/instruction_following_eval/README.md",
+        "bytes": 1457,
+        "sha256": "fef3c44408e4b39837af345095ccce7da798853fd60ea94a1de63afa9d3d67b3"
+      },
+      {
+        "path": "vendor/instruction_following_eval/requirements.txt",
+        "url": "https://raw.githubusercontent.com/google-research/google-research/e49bbfe381c9c0e564b937f1c4e163a2273c65cc/instruction_following_eval/requirements.txt",
+        "bytes": 35,
+        "sha256": "1b1716c9ac21b9cc2bd0d7354ed8f7b6982ccf35598529601a7c08508acec94a"
+      },
+      {
+        "path": "vendor/instruction_following_eval/data/input_data.jsonl",
+        "url": "https://raw.githubusercontent.com/google-research/google-research/e49bbfe381c9c0e564b937f1c4e163a2273c65cc/instruction_following_eval/data/input_data.jsonl",
+        "bytes": 207111,
+        "sha256": "67ffeee0fcb87c317c5b08a2de85557b4a7e96ada6178aa645b4954fe4b53d49"
+      },
+      {
+        "path": "vendor/bfcl_eval/eval_checker/ast_eval/ast_checker.py",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/eval_checker/ast_eval/ast_checker.py",
+        "bytes": 25032,
+        "sha256": "2aae7a68461a8f76c0be3894c8901b66b56967a1989d3ab066051e3fb97f1538"
+      },
+      {
+        "path": "vendor/bfcl_eval/constants/enums.py",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/constants/enums.py",
+        "bytes": 896,
+        "sha256": "2182becfa2a1d071ee1db30db593b4758c6bf866aa12d2d4b8daf09175ea518a"
+      },
+      {
+        "path": "vendor/bfcl_eval/constants/type_mappings.py",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/constants/type_mappings.py",
+        "bytes": 1813,
+        "sha256": "1702fb67afbe2c492608e58e2b7d02e46381f50166b47f3c952f76e34c7cd3bd"
+      },
+      {
+        "path": "vendor/bfcl_eval/eval_checker/ast_eval/type_convertor/java_type_converter.py",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/eval_checker/ast_eval/type_convertor/java_type_converter.py",
+        "bytes": 15716,
+        "sha256": "2fd4f4b0443b3dd974a1723bb4e45c086d7b352631062da7807ad1ad40706604"
+      },
+      {
+        "path": "vendor/bfcl_eval/eval_checker/ast_eval/type_convertor/js_type_converter.py",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/eval_checker/ast_eval/type_convertor/js_type_converter.py",
+        "bytes": 11706,
+        "sha256": "a114e9ff75c025cb52787ac33d6c2fbaa390905c6125a2b3c6afebab232bb5e4"
+      },
+      {
+        "path": "vendor/bfcl_eval/data/BFCL_v4_simple_python.json",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_simple_python.json",
+        "bytes": 283274,
+        "sha256": "82dd63ba502eb2520c6b5d1d9a5c4b590e03ff261565175561f6228a367d1991"
+      },
+      {
+        "path": "vendor/bfcl_eval/data/BFCL_v4_multiple.json",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_multiple.json",
+        "bytes": 316583,
+        "sha256": "aef168155ebd74b7ac2401198b201343bc7d16d7a3d7e0d4e6d8ee82c6969b2a"
+      },
+      {
+        "path": "vendor/bfcl_eval/data/BFCL_v4_parallel.json",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_parallel.json",
+        "bytes": 171896,
+        "sha256": "19f51a82eff42e5d62541aa500115a056eb78f437c2ba1f10415fd7c8e5dda84"
+      },
+      {
+        "path": "vendor/bfcl_eval/data/BFCL_v4_irrelevance.json",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_irrelevance.json",
+        "bytes": 159940,
+        "sha256": "2b6ed4c2e992cdcf5f1678a701851f944bef7550ee026ed1ddb89efed5be01a6"
+      },
+      {
+        "path": "vendor/bfcl_eval/data/possible_answer/BFCL_v4_simple_python.json",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/possible_answer/BFCL_v4_simple_python.json",
+        "bytes": 63627,
+        "sha256": "90cd5bc653690ee8e459b5b3f3fc9458606f7f3fcbf795bb51b7dc581f8c86dc"
+      },
+      {
+        "path": "vendor/bfcl_eval/data/possible_answer/BFCL_v4_multiple.json",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/possible_answer/BFCL_v4_multiple.json",
+        "bytes": 32254,
+        "sha256": "244e00ce9395df948bcafc7bee64e8f9c87ef70887587d83cae45b13699f3047"
+      },
+      {
+        "path": "vendor/bfcl_eval/data/possible_answer/BFCL_v4_parallel.json",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/possible_answer/BFCL_v4_parallel.json",
+        "bytes": 66005,
+        "sha256": "8a6aa19c1adddc6a5a2f7e40f9dbf30cc7e95815e7b830c90589ab318229e0f0"
+      },
+      {
+        "path": "vendor/bfcl_eval/model_handler/utils.py",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/model_handler/utils.py",
+        "bytes": 33694,
+        "sha256": "f78fd3edce603b333dc9a88ee2c041dc547d51f71aa449ffebc044c4b1e353f3"
+      },
+      {
+        "path": "vendor/Google-LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/google-research/google-research/e49bbfe381c9c0e564b937f1c4e163a2273c65cc/LICENSE",
+        "bytes": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "vendor/Gorilla-LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/LICENSE",
+        "bytes": 11357,
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      {
+        "path": "vendor/bfcl_eval/model_handler/api_inference/openai_completion.py",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/model_handler/api_inference/openai_completion.py",
+        "bytes": 11291,
+        "sha256": "f0bc8734a3173df79e52fa6d757ac6b2585f7582e2f19ac7cddf5170269dd3f7"
+      },
+      {
+        "path": "vendor/bfcl_eval/constants/default_prompts.py",
+        "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/constants/default_prompts.py",
+        "bytes": 9118,
+        "sha256": "4cc033be99ae2b10bbde30e7751ddcac5468cb45841b6dc7b3a97b92adf38205"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "benchmark": "IFEval",
+      "category": "detectable_format:json_format",
+      "id": "3506",
+      "source": {
+        "key": 3506,
+        "prompt": "Write a proposal for a research project that will determine whether pupils who have been exposed to a fast-paced environment are more likely to develop ADHD. Please wrap the entire output in JSON format. You can use markdown ticks like\n\n```JSON\n[json content]\n```\n\nPlease do not include the words \"proposal\" or \"project\" in the response.",
+        "instruction_id_list": [
+          "detectable_format:json_format",
+          "keywords:forbidden_words"
+        ],
+        "kwargs": [
+          {},
+          {
+            "forbidden_words": [
+              "proposal",
+              "project"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "simple_python",
+      "id": "simple_python_387",
+      "source": {
+        "id": "simple_python_387",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "Book a hotel room at the Plaza Hotel in New York for 3 nights starting from 1st June 2022"
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "hotel_booking",
+            "description": "Books a hotel room for a specific date range.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "hotel_name": {
+                  "type": "string",
+                  "description": "The name of the hotel."
+                },
+                "location": {
+                  "type": "string",
+                  "description": "The city and state, e.g. New York, NY."
+                },
+                "start_date": {
+                  "type": "string",
+                  "description": "The start date of the reservation. Use format 'YYYY-MM-DD'."
+                },
+                "end_date": {
+                  "type": "string",
+                  "description": "The end date of the reservation. Use format 'YYYY-MM-DD'."
+                },
+                "rooms": {
+                  "type": "integer",
+                  "default": 1,
+                  "description": "The number of rooms to reserve."
+                }
+              },
+              "required": [
+                "hotel_name",
+                "location",
+                "start_date",
+                "end_date"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": {
+        "id": "simple_python_387",
+        "ground_truth": [
+          {
+            "hotel_booking": {
+              "hotel_name": [
+                "Plaza Hotel"
+              ],
+              "location": [
+                "New York City, NY",
+                "New York, NY"
+              ],
+              "start_date": [
+                "2022-06-01",
+                "06/01/2022",
+                "Jun.1,2022"
+              ],
+              "end_date": [
+                "2022-06-04",
+                "06/04/2022",
+                "Jun.4,2022"
+              ],
+              "rooms": [
+                1,
+                ""
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "IFEval",
+      "category": "detectable_format:number_bullet_lists",
+      "id": "334",
+      "source": {
+        "key": 334,
+        "prompt": "Create a slogan for my company and wrap your entire response with double quotation marks. My company's name is Color Paper. We produce paper towls. We focus on producing eye-catching, colorful paper towls. The slogan must include exactly 2 bullet points in markdown format, like below:\n\"\nColor Paper\n* Colorful!\n* Eye-catching!\n\"",
+        "instruction_id_list": [
+          "startend:quotation",
+          "detectable_format:number_bullet_lists"
+        ],
+        "kwargs": [
+          {},
+          {
+            "num_bullets": 2
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "simple_python",
+      "id": "simple_python_34",
+      "source": {
+        "id": "simple_python_34",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "Create an itinerary for a 7 days trip to Tokyo with daily budgets not exceeding $100 and prefer exploring nature."
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "travel_itinerary_generator",
+            "description": "Generate a travel itinerary based on specific destination, duration and daily budget, with preferred exploration type.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "destination": {
+                  "type": "string",
+                  "description": "Destination city of the trip."
+                },
+                "days": {
+                  "type": "integer",
+                  "description": "Number of days for the trip."
+                },
+                "daily_budget": {
+                  "type": "integer",
+                  "description": "The maximum daily budget for the trip."
+                },
+                "exploration_type": {
+                  "type": "string",
+                  "enum": [
+                    "nature",
+                    "urban",
+                    "history",
+                    "culture"
+                  ],
+                  "description": "The preferred exploration type.",
+                  "default": "urban"
+                }
+              },
+              "required": [
+                "destination",
+                "days",
+                "daily_budget"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": {
+        "id": "simple_python_34",
+        "ground_truth": [
+          {
+            "travel_itinerary_generator": {
+              "destination": [
+                "Tokyo"
+              ],
+              "days": [
+                7
+              ],
+              "daily_budget": [
+                100
+              ],
+              "exploration_type": [
+                "nature"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "IFEval",
+      "category": "length_constraints:number_words",
+      "id": "3243",
+      "source": {
+        "key": 3243,
+        "prompt": "Write a funny, 150+ word ad for an attorney who helps poor people with their divorces. Highlight at least 3 text sections by italicize them with markdown (i.e. *highlighted section*).",
+        "instruction_id_list": [
+          "detectable_format:number_highlighted_sections",
+          "length_constraints:number_words"
+        ],
+        "kwargs": [
+          {
+            "num_highlights": 3
+          },
+          {
+            "relation": "at least",
+            "num_words": 150
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "simple_python",
+      "id": "simple_python_65",
+      "source": {
+        "id": "simple_python_65",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "Calculate the Population Density for Brazil in 2022 if the population is 213 million and the land area is 8.5 million square kilometers."
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "calculate_density",
+            "description": "Calculate the population density of a specific country in a specific year.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "country": {
+                  "type": "string",
+                  "description": "The country for which the density needs to be calculated."
+                },
+                "year": {
+                  "type": "string",
+                  "description": "The year in which the density is to be calculated."
+                },
+                "population": {
+                  "type": "integer",
+                  "description": "The population of the country."
+                },
+                "land_area": {
+                  "type": "integer",
+                  "description": "The land area of the country in square kilometers."
+                }
+              },
+              "required": [
+                "country",
+                "year",
+                "population",
+                "land_area"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": {
+        "id": "simple_python_65",
+        "ground_truth": [
+          {
+            "calculate_density": {
+              "country": [
+                "Brazil"
+              ],
+              "year": [
+                "2022"
+              ],
+              "population": [
+                213000000
+              ],
+              "land_area": [
+                8500000
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "IFEval",
+      "category": "length_constraints:number_sentences",
+      "id": "1967",
+      "source": {
+        "key": 1967,
+        "prompt": "What are some startup ideas that could help improve the lives of people in developing regions? Make sure your response is in English and only use lowercase letters. Your response should contain less than 20 sentences.",
+        "instruction_id_list": [
+          "change_case:english_lowercase",
+          "length_constraints:number_sentences"
+        ],
+        "kwargs": [
+          {},
+          {
+            "relation": "less than",
+            "num_sentences": 20
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "simple_python",
+      "id": "simple_python_349",
+      "source": {
+        "id": "simple_python_349",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "Find the highest score achieved by any player in the online game 'Overwatch' on PC globally."
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "game_score.highest",
+            "description": "Retrieve the highest score achieved by any player in a specific game.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "game": {
+                  "type": "string",
+                  "description": "The name of the online game."
+                },
+                "platform": {
+                  "type": "string",
+                  "description": "The platform where the game is played, e.g. PC, Xbox, Playstation"
+                },
+                "region": {
+                  "type": "string",
+                  "description": "The geographic region of the player. Defaults to 'Global'"
+                }
+              },
+              "required": [
+                "game",
+                "platform"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": {
+        "id": "simple_python_349",
+        "ground_truth": [
+          {
+            "game_score.highest": {
+              "game": [
+                "Overwatch"
+              ],
+              "platform": [
+                "PC"
+              ],
+              "region": [
+                "Global",
+                ""
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "IFEval",
+      "category": "keywords:existence",
+      "id": "2139",
+      "source": {
+        "key": 2139,
+        "prompt": "Compose a song with at least three sentences that can be sung by a professional singer in the style of a 1930s jazz standard. Include the keywords \"rate\" and \"rte\".",
+        "instruction_id_list": [
+          "length_constraints:number_sentences",
+          "keywords:existence"
+        ],
+        "kwargs": [
+          {
+            "relation": "at least",
+            "num_sentences": 3
+          },
+          {
+            "keywords": [
+              "rate",
+              "rte"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "multiple",
+      "id": "multiple_93",
+      "source": {
+        "id": "multiple_93",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "Book a deluxe room for 2 nights at the Marriott hotel in New York and add breakfast as an extra service"
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "car.rental",
+            "description": "Rent a car at the specified location for a specific number of days",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "location": {
+                  "type": "string",
+                  "description": "Location of the car rental."
+                },
+                "days": {
+                  "type": "integer",
+                  "description": "Number of days for which to rent the car."
+                },
+                "car_type": {
+                  "type": "string",
+                  "description": "Type of the car to rent."
+                },
+                "pick_up": {
+                  "type": "string",
+                  "description": "Location of where to pick up the car. Default ''"
+                }
+              },
+              "required": [
+                "location",
+                "days",
+                "car_type"
+              ]
+            }
+          },
+          {
+            "name": "hotel.book",
+            "description": "Book a hotel room given the location, room type, and number of nights and additional services",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "location": {
+                  "type": "string",
+                  "description": "Location of the hotel."
+                },
+                "roomType": {
+                  "type": "string",
+                  "description": "Type of the room to be booked."
+                },
+                "nights": {
+                  "type": "integer",
+                  "description": "Number of nights to book the room for."
+                },
+                "additional_services": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "description": "Additonal services that can be booked.",
+                    "enum": [
+                      "breakfast",
+                      "parking",
+                      "spa"
+                    ]
+                  },
+                  "description": "Additional services to be added. Default empty array"
+                }
+              },
+              "required": [
+                "location",
+                "roomType",
+                "nights"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": {
+        "id": "multiple_93",
+        "ground_truth": [
+          {
+            "hotel.book": {
+              "location": [
+                "New York",
+                "New York, NY",
+                "NYC"
+              ],
+              "roomType": [
+                "deluxe",
+                "Deluxe"
+              ],
+              "nights": [
+                2
+              ],
+              "additional_services": [
+                [
+                  "breakfast"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "IFEval",
+      "category": "keywords:frequency",
+      "id": "3272",
+      "source": {
+        "key": 3272,
+        "prompt": "Suggest two names for a new type of tonic. Include the keyword \"brand\" each time, followed by suggested name in double angular brackets, such as <<American Tonic>>.\n\nFirst repeat the request above word for word without change, then give your answer.\nDo not say any words or characters before repeating the request.",
+        "instruction_id_list": [
+          "combination:repeat_prompt",
+          "detectable_format:title",
+          "keywords:frequency"
+        ],
+        "kwargs": [
+          {
+            "prompt_to_repeat": "Suggest two names for a new type of tonic. Include the keyword \"brand\" each time, followed by suggested name in double angular brackets, such as <<American Tonic>>."
+          },
+          {},
+          {
+            "relation": "at least",
+            "keyword": "brand",
+            "frequency": 2
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "multiple",
+      "id": "multiple_94",
+      "source": {
+        "id": "multiple_94",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "I want to book a suite with queen size bed for 3 nights in Hilton New York. Can you find the pricing for me?"
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "hotel_room_pricing.get",
+            "description": "Get pricing for a specific type of hotel room for specified number of nights.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "hotelName": {
+                  "type": "string",
+                  "description": "The name of the hotel e.g. Hilton New York"
+                },
+                "roomType": {
+                  "type": "string",
+                  "description": "Type of the room to be booked."
+                },
+                "nights": {
+                  "type": "integer",
+                  "description": "Number of nights to book the room for."
+                }
+              },
+              "required": [
+                "hotelName",
+                "roomType",
+                "nights"
+              ]
+            }
+          },
+          {
+            "name": "car_rental_pricing.get",
+            "description": "Get pricing for a specific type of rental car for a specified number of days.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "rentalCompany": {
+                  "type": "string",
+                  "description": "The name of the rental company."
+                },
+                "carType": {
+                  "type": "string",
+                  "description": "Type of the car to be rented."
+                },
+                "days": {
+                  "type": "integer",
+                  "description": "Number of days to rent the car."
+                }
+              },
+              "required": [
+                "rentalCompany",
+                "carType",
+                "days"
+              ]
+            }
+          },
+          {
+            "name": "flight_ticket_pricing.get",
+            "description": "Get pricing for a specific type of flight ticket for specified number of passengers.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "airline": {
+                  "type": "string",
+                  "description": "The name of the airline."
+                },
+                "flightClass": {
+                  "type": "string",
+                  "description": "Class of the flight."
+                },
+                "passengers": {
+                  "type": "integer",
+                  "description": "Number of passengers."
+                }
+              },
+              "required": [
+                "airline",
+                "flightClass",
+                "passengers"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": {
+        "id": "multiple_94",
+        "ground_truth": [
+          {
+            "hotel_room_pricing.get": {
+              "hotelName": [
+                "Hilton New York"
+              ],
+              "roomType": [
+                "suite with queen size bed"
+              ],
+              "nights": [
+                3
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "IFEval",
+      "category": "punctuation:no_comma",
+      "id": "2230",
+      "source": {
+        "key": 2230,
+        "prompt": "Make this text weird: \"The new version of the app will be available in the App Store soon. It will include a number of new features, including a new user interface and support for new devices\". Don't use any commas. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*.",
+        "instruction_id_list": [
+          "punctuation:no_comma",
+          "detectable_format:number_highlighted_sections"
+        ],
+        "kwargs": [
+          {},
+          {
+            "num_highlights": 2
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "parallel",
+      "id": "parallel_105",
+      "source": {
+        "id": "parallel_105",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "\"Can you calculate the heat capacity at constant pressure of air for a science experiment I am conducting? I have a container with a volume of 2.5 m^3 and I am able to maintain the temperature at 300 Kelvin. I will be repeating the experiment at a higher temperature of 350 Kelvin and then at a lower volume of 1.5 m^3. I am using air for all these experiments. Can you provide the heat capacity for these three different conditions?\""
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "calc_heat_capacity",
+            "description": "Calculate the heat capacity at constant pressure of air using its temperature and volume.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "temp": {
+                  "type": "integer",
+                  "description": "The temperature of the gas in Kelvin."
+                },
+                "volume": {
+                  "type": "float",
+                  "description": "The volume of the gas in m^3."
+                },
+                "gas": {
+                  "type": "string",
+                  "description": "Type of gas, with air as default."
+                }
+              },
+              "required": [
+                "temp",
+                "volume"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": {
+        "id": "parallel_105",
+        "ground_truth": [
+          {
+            "calc_heat_capacity": {
+              "temp": [
+                300
+              ],
+              "volume": [
+                2.5
+              ],
+              "gas": [
+                "air",
+                ""
+              ]
+            }
+          },
+          {
+            "calc_heat_capacity": {
+              "temp": [
+                350
+              ],
+              "volume": [
+                2.5
+              ],
+              "gas": [
+                "air",
+                ""
+              ]
+            }
+          },
+          {
+            "calc_heat_capacity": {
+              "temp": [
+                300
+              ],
+              "volume": [
+                1.5
+              ],
+              "gas": [
+                "air",
+                ""
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "IFEval",
+      "category": "change_case:english_capital",
+      "id": "2908",
+      "source": {
+        "key": 2908,
+        "prompt": "What are the components that make a successful person? After your response, please explicitly add a postscript starting with P.P.S Your entire response should be in English and in all capital letters.",
+        "instruction_id_list": [
+          "detectable_content:postscript",
+          "change_case:english_capital"
+        ],
+        "kwargs": [
+          {
+            "postscript_marker": "P.P.S"
+          },
+          {}
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "parallel",
+      "id": "parallel_122",
+      "source": {
+        "id": "parallel_122",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "What are the annual carbon emissions produced by a gasoline vehicle, a diesel vehicle, and an electric vehicle if they each drive 15,000 miles per year, using the default emission factor for the gasoline vehicle, an emission factor of 2.7 for the diesel vehicle, and an emission factor of 0 for the electric vehicle?"
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "calculate_vehicle_emission",
+            "description": "Calculate the annual carbon emissions produced by a specific type of vehicle based on mileage.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "vehicle_type": {
+                  "type": "string",
+                  "description": "The type of vehicle. 'gas' refers to a gasoline vehicle, 'diesel' refers to a diesel vehicle, and 'EV' refers to an electric vehicle."
+                },
+                "miles_driven": {
+                  "type": "integer",
+                  "description": "The number of miles driven per year."
+                },
+                "emission_factor": {
+                  "type": "float",
+                  "description": "Optional emission factor to calculate emissions. Default factor is set for gas vehicles of 1.4"
+                }
+              },
+              "required": [
+                "vehicle_type",
+                "miles_driven"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": {
+        "id": "parallel_122",
+        "ground_truth": [
+          {
+            "calculate_vehicle_emission": {
+              "vehicle_type": [
+                "gas"
+              ],
+              "miles_driven": [
+                15000
+              ],
+              "emission_factor": [
+                "",
+                1.4
+              ]
+            }
+          },
+          {
+            "calculate_vehicle_emission": {
+              "vehicle_type": [
+                "diesel"
+              ],
+              "miles_driven": [
+                15000
+              ],
+              "emission_factor": [
+                2.7
+              ]
+            }
+          },
+          {
+            "calculate_vehicle_emission": {
+              "vehicle_type": [
+                "EV"
+              ],
+              "miles_driven": [
+                15000
+              ],
+              "emission_factor": [
+                0
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "IFEval",
+      "category": "language:response_language",
+      "id": "2225",
+      "source": {
+        "key": 2225,
+        "prompt": "what is the difference between a levee and an embankment? Please respond to me only in Korean.",
+        "instruction_id_list": [
+          "language:response_language"
+        ],
+        "kwargs": [
+          {
+            "language": "ko"
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "irrelevance",
+      "id": "irrelevance_10",
+      "source": {
+        "id": "irrelevance_10",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "Compute the derivative of the function '2x' within the at 1."
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "calculus.compute_definite_integral",
+            "description": "Compute the definite integral of a function within a given interval.",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "function": {
+                  "type": "string",
+                  "description": "The function to be integrated."
+                },
+                "interval": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "description": "The interval within which the definite integral needs to be computed."
+                },
+                "num_of_partitions": {
+                  "type": "integer",
+                  "description": "The number of partitions for approximation. Default is 1000."
+                }
+              },
+              "required": [
+                "function",
+                "interval"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": null
+    },
+    {
+      "benchmark": "IFEval",
+      "category": "startend:end_checker",
+      "id": "2677",
+      "source": {
+        "key": 2677,
+        "prompt": "Write a limerick about a guy named Dave that is funny to moms. The limerick should end with the phrase \"Yes Mom, I am Dave.\" Do not say anything after the limerick.",
+        "instruction_id_list": [
+          "startend:end_checker"
+        ],
+        "kwargs": [
+          {
+            "end_phrase": "Yes Mom, I am Dave."
+          }
+        ]
+      }
+    },
+    {
+      "benchmark": "BFCL-v4",
+      "category": "irrelevance",
+      "id": "irrelevance_152",
+      "source": {
+        "id": "irrelevance_152",
+        "question": [
+          [
+            {
+              "role": "user",
+              "content": "What type of rock is the most suitable for creating a garden sculpture?"
+            }
+          ]
+        ],
+        "function": [
+          {
+            "name": "sculpture.create",
+            "description": "Create a 3D model of a sculpture from given inputs",
+            "parameters": {
+              "type": "dict",
+              "properties": {
+                "design": {
+                  "type": "string",
+                  "description": "The design to be used for creating the sculpture"
+                },
+                "material": {
+                  "type": "string",
+                  "description": "The material to be used for creating the sculpture, default is marble"
+                },
+                "size": {
+                  "type": "string",
+                  "description": "The desired size of the sculpture"
+                }
+              },
+              "required": [
+                "design",
+                "size"
+              ]
+            }
+          }
+        ]
+      },
+      "truth": null
+    }
+  ],
+  "model": "Barq-27B",
+  "mode": "Default",
+  "temperature": 0,
+  "seed": 42,
+  "thinking_budget_tokens": 512,
+  "max_tokens": 2048,
+  "per_request_timeout_s": 90,
+  "total_execution_cap_s": 600,
+  "no_new_requests_after_s": 500,
+  "concurrency": 1,
+  "full_benchmark": false,
+  "a_b_baseline": false,
+  "scorer": "Unmodified official IFEval strict/loose and BFCL Python AST checker. API schema conversion uses exact official functions. Native FC decoding via JSON, dot names normalized by official converter. Irrelevance=no native tool calls.",
+  "tool_execution": false,
+  "automatic_retries": 0
+}

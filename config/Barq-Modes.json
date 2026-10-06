@@ -1,0 +1,8 @@
+{
+  "Default": {"effort": "medium", "budget": 2048, "model": "Barq-27B", "guidance": "Use proportionate reasoning and complete the next necessary action promptly."},
+  "Low": {"effort": "low", "budget": 512, "model": "Barq-27B-Low", "guidance": "Answer simple requests directly. Keep reasoning brief; use tools only when necessary."},
+  "Medium": {"effort": "medium", "budget": 2048, "model": "Barq-27B-Medium", "guidance": "Balance careful reasoning with prompt execution."},
+  "High": {"effort": "xhigh", "budget": 8192, "model": "Barq-27B-High", "guidance": "Check the important assumptions and interactions before a complex change."},
+  "Xhigh": {"effort": "xhigh", "budget": 16384, "model": "Barq-27B-Xhigh", "guidance": "Use extended reasoning for difficult problems, then deliver a concrete result."},
+  "Max": {"effort": "xhigh", "budget": 24576, "model": "Barq-27B-Max", "guidance": "Use extended reasoning only for difficult tasks. Answer simple questions directly and stop when the requested result is supported."}
+}

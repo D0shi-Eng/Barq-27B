@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "barq_memory": {
+      "command": "python",
+      "args": ["D:/Barq 27B/memory/Barq-Memory-MCP.py"],
+      "env": {"BARQ_MEMORY_PROJECT_ROOT": "D:/YourProject"}
+    }
+  }
+}

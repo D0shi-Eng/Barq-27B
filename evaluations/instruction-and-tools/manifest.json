@@ -1,0 +1,38 @@
+{
+  "selection_sha256": "27e63b0b18f1760cc4ecf32a6482d9bea18fc4d1b1be50d455a4bb5c58776e2f",
+  "started_utc": "2026-10-06T18:18:20.604502+00:00",
+  "permission": "User authorized at most 10 minutes, basic cases only, sequential existing-server inference.",
+  "preflight": {
+    "free_ram_gib": 5.38,
+    "cpu_load_percent": 4,
+    "model_paths": [
+      "D:\\Barq 27B\\models\\Barq-27B-PQ2_0-v4.gguf"
+    ],
+    "slots": 1,
+    "processing": false
+  },
+  "package": {
+    "package": "Barq 27B",
+    "policy_version": "4.0",
+    "active_model": "models/Barq-27B-PQ2_0-v4.gguf",
+    "policy_sha256": "f219cd4d7c5b7b3d7c622af33f10e8ae72f6f452f4912e325a9b803d95004c57",
+    "weights_trained": false,
+    "memory": "scoped gateway memory through Chat Completions; optional MCP",
+    "activation": "Requires user restart; running processes were not changed."
+  },
+  "policy_sha256": "f219cd4d7c5b7b3d7c622af33f10e8ae72f6f452f4912e325a9b803d95004c57",
+  "gateway_sha256": "ca5c28f9796b6388695f77d4f9aca4c8ceb202b9ade5cbaa0b52388cd33d619d",
+  "execution_cap_s": 600,
+  "last_request_admission_s": 500,
+  "max_tokens": 2048,
+  "thinking_budget_tokens": 512,
+  "mode": "Default",
+  "temperature": 0,
+  "seed": 42,
+  "request_timeout_s": 90,
+  "concurrency": 1,
+  "automatic_retries": 0,
+  "full_benchmark": false,
+  "a_b_baseline": false,
+  "real_tool_execution": false
+}

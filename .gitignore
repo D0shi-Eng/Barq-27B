@@ -1,0 +1,19 @@
+# Local artifacts and credentials
+models/*.gguf
+models/*.installing
+runtime/*.exe
+runtime/*.dll
+logs/
+memory/data/
+backups/
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite*
+*.pem
+*.key
+__pycache__/
+*.pyc
+.venv/
+venv/

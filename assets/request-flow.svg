@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img">
+<title>REQUEST LIFECYCLE</title>
+<desc>Admission is sequential; multiple tool calls can still appear in one model response.</desc>
+<rect width="1600" height="1000" fill="#0b1220"/>
+<text x="60" y="87" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">BARQ 27B</text>
+<text x="60" y="134" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">REQUEST LIFECYCLE</text>
+<text x="60" y="170" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Admission is sequential; multiple tool calls can still appear in one model response.</text>
+<polyline points="60,194 1540,194" fill="none" stroke="#334760" stroke-width="2"/>
+<rect x="60" y="250" width="420" height="235" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="84" y="297" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">01  RECEIVE</text>
+<text x="84" y="347" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Validate JSON + model alias</text>
+<text x="84" y="383" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Optional API key check</text>
+<rect x="590" y="250" width="420" height="235" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="614" y="297" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">02  PREPARE</text>
+<text x="614" y="347" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Select mode and finite budget</text>
+<text x="614" y="383" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Insert one core policy</text>
+<rect x="1120" y="250" width="420" height="235" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="1144" y="297" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">03  QUEUE</text>
+<text x="1144" y="347" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Bounded FIFO waiting</text>
+<text x="1144" y="383" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Cancellation / wait expiry</text>
+<rect x="1120" y="580" width="420" height="235" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="1144" y="627" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">04  GENERATE</text>
+<text x="1144" y="677" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Single runtime slot</text>
+<text x="1144" y="713" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Native tool-call protocol</text>
+<rect x="590" y="580" width="420" height="235" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="614" y="627" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">05  RELEASE</text>
+<text x="614" y="677" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Close backend response</text>
+<text x="614" y="713" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Release before final DONE</text>
+<rect x="60" y="580" width="420" height="235" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="84" y="627" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">06  DELIVER</text>
+<text x="84" y="677" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Stream text / tool calls</text>
+<text x="84" y="713" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Host runs authorized tools</text>
+<polyline points="480,368 590,368" fill="none" stroke="#67c7ff" stroke-width="3"/>
+<polygon points="590,368 578,361 578,375" fill="#67c7ff"/>
+<polyline points="1010,368 1120,368" fill="none" stroke="#67c7ff" stroke-width="3"/>
+<polygon points="1120,368 1108,361 1108,375" fill="#67c7ff"/>
+<polyline points="1330,485 1330,580" fill="none" stroke="#67c7ff" stroke-width="3"/>
+<polygon points="1330,580 1323,568 1337,568" fill="#67c7ff"/>
+<polyline points="1120,698 1010,698" fill="none" stroke="#67c7ff" stroke-width="3"/>
+<polygon points="1010,698 1022,691 1022,705" fill="#67c7ff"/>
+<polyline points="590,698 480,698" fill="none" stroke="#67c7ff" stroke-width="3"/>
+<polygon points="480,698 492,691 492,705" fill="#67c7ff"/>
+<text x="60" y="884" fill="#56dfbc" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Memory control commands can return directly, without model generation.</text>
+<text x="60" y="964" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">SOURCE-VERIFIED STRUCTURE  |  POLICY 4.0  |  06 OCT 2026</text>
+</svg>

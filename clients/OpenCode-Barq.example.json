@@ -1,0 +1,62 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "barq": {
+      "name": "Barq 27B",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:8081/v1"
+      },
+      "models": {
+        "Barq-27B": {
+          "name": "Barq 27B — Default",
+          "reasoning": true,
+          "limit": {
+            "context": 262144,
+            "output": 16384
+          }
+        },
+        "Barq-27B-Low": {
+          "name": "Barq 27B — Low",
+          "reasoning": true,
+          "limit": {
+            "context": 262144,
+            "output": 16384
+          }
+        },
+        "Barq-27B-Medium": {
+          "name": "Barq 27B — Medium",
+          "reasoning": true,
+          "limit": {
+            "context": 262144,
+            "output": 16384
+          }
+        },
+        "Barq-27B-High": {
+          "name": "Barq 27B — High",
+          "reasoning": true,
+          "limit": {
+            "context": 262144,
+            "output": 16384
+          }
+        },
+        "Barq-27B-Xhigh": {
+          "name": "Barq 27B — Xhigh",
+          "reasoning": true,
+          "limit": {
+            "context": 262144,
+            "output": 32768
+          }
+        },
+        "Barq-27B-Max": {
+          "name": "Barq 27B — Max",
+          "reasoning": true,
+          "limit": {
+            "context": 262144,
+            "output": 32768
+          }
+        }
+      }
+    }
+  }
+}

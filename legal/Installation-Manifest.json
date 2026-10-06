@@ -1,0 +1,17 @@
+{
+  "active_policy": {
+    "model": "models/Barq-27B-PQ2_0-v4.gguf",
+    "model_bytes": 7206182912,
+    "model_sha256": "d826e7a535a52d099da02732e588a96799aadd061ce081e40b5902817e1f1900",
+    "policy_sha256": "f219cd4d7c5b7b3d7c622af33f10e8ae72f6f452f4912e325a9b803d95004c57",
+    "policy_version": "4.0"
+  },
+  "package_files": [
+    {
+      "path": "prompts/Barq-27B-System.txt",
+      "sha256": "f219cd4d7c5b7b3d7c622af33f10e8ae72f6f452f4912e325a9b803d95004c57",
+      "bytes": 10430
+    }
+  ],
+  "provenance": "Model hash/size recorded at policy 4.0 installation; weights not freshly rehashed during evaluations."
+}

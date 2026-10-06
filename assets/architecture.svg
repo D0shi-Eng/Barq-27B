@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img">
+<title>LOCAL SERVING ARCHITECTURE</title>
+<desc>One local model, six modes, OpenAI-compatible Chat Completions.</desc>
+<rect width="1600" height="1000" fill="#0b1220"/>
+<text x="60" y="87" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">BARQ 27B</text>
+<text x="60" y="134" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">LOCAL SERVING ARCHITECTURE</text>
+<text x="60" y="170" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">One local model, six modes, OpenAI-compatible Chat Completions.</text>
+<polyline points="60,194 1540,194" fill="none" stroke="#334760" stroke-width="2"/>
+<rect x="60" y="255" width="310" height="370" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="84" y="302" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">HOST APPLICATION</text>
+<text x="84" y="352" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">OpenCode</text>
+<text x="84" y="388" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Hermes / other clients</text>
+<text x="84" y="424" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Chat Completions</text>
+<text x="84" y="460" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Host executes tools</text>
+<text x="84" y="496" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Host provides agents</text>
+<rect x="445" y="220" width="510" height="405" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="469" y="267" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">BARQ GATEWAY  :8081</text>
+<text x="469" y="317" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Compact system policy</text>
+<text x="469" y="353" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Mode + token budget translation</text>
+<text x="469" y="389" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">FIFO admission: one active request</text>
+<text x="469" y="425" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Up to 8 waiting; 1,200 s wait limit</text>
+<text x="469" y="461" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Structured diagnostics</text>
+<text x="469" y="497" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">SSE response streaming</text>
+<rect x="1030" y="255" width="510" height="290" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="1054" y="302" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">TERNARY RUNTIME  :8082</text>
+<text x="1054" y="352" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Prism llama.cpp / CUDA 12.4</text>
+<text x="1054" y="388" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Single generation slot</text>
+<text x="1054" y="424" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Q4 K/V cache; Flash Attention</text>
+<text x="1054" y="460" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Vision projector on CPU</text>
+<rect x="1030" y="635" width="510" height="170" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="1054" y="682" fill="#56dfbc" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">MODEL ARTIFACT</text>
+<text x="1054" y="732" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">PQ2_0 GGUF + embedded template</text>
+<text x="1054" y="768" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Numerical tensor weights unchanged</text>
+<rect x="445" y="715" width="510" height="150" rx="16" fill="#132136" stroke="#334760" stroke-width="2"/>
+<text x="469" y="762" fill="#56dfbc" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">OPTIONAL SCOPED MEMORY</text>
+<text x="469" y="812" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Explicit gateway commands / optional MCP</text>
+<text x="469" y="848" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">External SQLite; project-scoped records</text>
+<polyline points="370,430 445,430" fill="none" stroke="#67c7ff" stroke-width="3"/>
+<polygon points="445,430 433,423 433,437" fill="#67c7ff"/>
+<polyline points="955,430 1030,430" fill="none" stroke="#67c7ff" stroke-width="3"/>
+<polygon points="1030,430 1018,423 1018,437" fill="#67c7ff"/>
+<polyline points="1285,545 1285,635" fill="none" stroke="#56dfbc" stroke-width="3"/>
+<polygon points="1285,635 1278,623 1292,623" fill="#56dfbc"/>
+<polyline points="700,625 700,715" fill="none" stroke="#56dfbc" stroke-width="3"/>
+<polygon points="700,715 693,703 707,703" fill="#56dfbc"/>
+<text x="65" y="712" fill="#67c7ff" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">Client URL</text>
+<text x="65" y="751" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">http://127.0.0.1:8081/v1</text>
+<text x="65" y="806" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Backend remains loopback-only.</text>
+<text x="65" y="838" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Tools are not run by the gateway.</text>
+<text x="60" y="964" fill="#afc0d5" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">SOURCE-VERIFIED STRUCTURE  |  POLICY 4.0  |  06 OCT 2026</text>
+</svg>
